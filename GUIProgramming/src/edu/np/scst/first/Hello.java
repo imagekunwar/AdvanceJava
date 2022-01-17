@@ -5,8 +5,8 @@ import javax.swing.*;
 public class Hello extends JFrame{
     
     public Hello(){
-        JPanel jPanel = new JPanel();
-        jPanel.setBackground(Color.red);
+       // JPanel jPanel = new JPanel();
+        //jPanel.setBackground(Color.red);
         
         add(jPanel);
         setVisible(true);
