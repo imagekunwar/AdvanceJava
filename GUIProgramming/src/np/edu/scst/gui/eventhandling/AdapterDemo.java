@@ -21,10 +21,6 @@ public class AdapterDemo extends JFrame {
         setSize(400,400);
         setDefaultCloseOperation(3);
                 
-    
-    
-    
-    
     public static void main(String[]args){
         new AdapterDemo();
     }
