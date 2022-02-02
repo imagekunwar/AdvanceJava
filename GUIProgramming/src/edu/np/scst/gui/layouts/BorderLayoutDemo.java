@@ -14,7 +14,7 @@ public class BorderLayoutDemo extends JFrame{
     JLabel jLabel3=new JLabel("South");
     JLabel jLabel4=new JLabel("Center");
     
-    add(jPanel);
+    jPanel.setLayout(new BorderLayout());
     jPanel.add(jLabel,BorderLayout.EAST);
     jPanel.add(jLabel1,BorderLayout.WEST);
     jPanel.add(jLabel2,BorderLayout.NORTH);
@@ -24,8 +24,8 @@ public class BorderLayoutDemo extends JFrame{
     
     
     
-    jPanel.setLayout(new BorderLayout());
     
+    add(jPanel);
     setVisible(true);
     setSize(500,500);
     setTitle("Border Layout in Swing");
