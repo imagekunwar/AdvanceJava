@@ -12,50 +12,32 @@ public class Voters extends JFrame {
         JTextField jTextField= new JTextField(10);
         
         JButton jButton= new JButton("Submit");
+        JTextField jTextField2=new JTextField("****",20);
         
-        jButton.addMouseListener(new MouseListener(){
+        jButton.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseClicked(MouseEvent e) {
-                try{
-                    if(int age>18){
-                        System.out.println("eligible to vote");
                 
-                        else{
-                                System.out.println("not eligible to vote");
+                    String age= jTextField.getText();
+                    int eligible=Integer.valueOf(age);
+                    
+                    if(eligible>18){
+                        jTextField2.setText("eligible to vote");}
+                
+                        else {
+                                jTextField2.setText("not eligible to vote");
                                 }
                     }
                     
-                }
-                catch(Exception ex){
-                    System.out.println("Invalid Number");
-                }
+             
 
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
+           
         });
         
         add(jLabel);
         add(jTextField);
         add(jButton);
+        add(jTextField2);
         
         setLayout(new FlowLayout());
         setVisible(true);
