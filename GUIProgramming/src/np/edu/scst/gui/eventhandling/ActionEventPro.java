@@ -19,24 +19,26 @@ public class ActionEventPro extends JFrame {
 
         }});
         jButton2.addActionListener(new ActionListener(){
-    @Override
-        public void actionPerformed(ActionEvent e){
-        System.out.println("CLick here for magic: Button2");
-    }});
-        
         @Override
-        public void actionPerformed(ActionEvent e){
-        System.out.println("CLick here : Button3");
-    }
-   
-    }
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("Button 2 is clicked");
+        }
+    });
+        
+        jButton3.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Button 3 is clicked");
             }
+        
+            
+        });
+        
+            setLayout(new FlowLayout());
     
-    
-    
-    }
-    
-     
+            add(jButton);
+            add(jButton2);
+            add(jButton3);
             
             
             
