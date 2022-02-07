@@ -1,14 +1,48 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package edu.np.scst.first;
 
-/**
- *
- * @author Dell
- */
-public class Menu {
+import javax.swing.*;
+import java.awt.*;
+
+public class Menu extends JFrame{
+    Menu(){
+        
+        JMenuItem newItem=new JMenuItem("New");
+        JMenuItem open=new JMenuItem("Open");
+        JMenuItem pdf= new JMenuItem("pdf");
+        JMenuItem docs=new JMenuItem("docs");
+        
+        JMenu file=new JMenu("File");
+        JMenu view=new JMenu("View");
+        JMenu saveAs=new JMenu("Save As");
+        
+        JMenuBar jMenuBar=new JMenuBar();
+        
+        saveAs.add(pdf);
+        saveAs.add(docs);
+        
+        file.add(newItem);
+        file.add(open);
+        file.add(saveAs);
+        
+        jMenuBar.add(file);
+        jMenuBar.add(view);
+        
+        
+       add(jMenuBar);
+       
+       setLayout(new FlowLayout());
+        
+        
+        
+    setVisible(true);
+    setSize(400,400);
+    setTitle("Menu in Java Swing");
+    setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+    
+    public static void main(String[]args){
+        Menu m=new Menu();
+    }
     
 }
