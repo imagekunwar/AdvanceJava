@@ -20,7 +20,7 @@ public class Retrive {
         ResultSet rs=stmnt.executeQuery(sql);
         System.out.println("id\tname\tage\tprogram\tsubject");
         
-        while(rs.next()){
+        while(rs.next()){    //next() method is in result set where it point next row if exist
             System.out.print(rs.getInt("id")+"\t");
             System.out.print(rs.getString("name")+"\t");
             System.out.print(rs.getInt("age")+"\t");
