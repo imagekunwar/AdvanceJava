@@ -51,7 +51,5 @@ public class Scrollable {
         stmnt.execute(sql);
         stmnt.close();
         con.close();
-        
-    
 }
 }
