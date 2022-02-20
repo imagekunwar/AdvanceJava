@@ -1,16 +1,20 @@
 package edu.np.scst.first;
-import java.awt.Color;
+import java.awt.FlowLayout;
 import javax.swing.*;
 
 public class Hello extends JFrame{
     
     public Hello(){
-        JPanel jPanel = new JPanel();
-        jPanel.setBackground(Color.red);
+       // JPanel jPanel = new JPanel();
+        //jPanel.setBackground(Color.red);
+        JLabel jLabel=new JLabel("Hello World");
+        JLabel jLabel1=new JLabel("Hello World");
         
-        add(jPanel);
+        setLayout(new FlowLayout());
+        add(jLabel);
+        add(jLabel1);
         setVisible(true);
-//       setDefaultCloseOperation(3);
+//        setDefaultCloseOperation(3);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(250,150);
         setTitle("Hello world");

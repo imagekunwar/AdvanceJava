@@ -8,8 +8,10 @@ public class DisplayingImage extends JFrame{
         JPanel jPanel=new JPanel();
         
         JLabel jLabel=new JLabel(image);
+        
+        
         add(jPanel);
-        add(jLabel);
+        jPanel.add(jLabel);
         
         
         

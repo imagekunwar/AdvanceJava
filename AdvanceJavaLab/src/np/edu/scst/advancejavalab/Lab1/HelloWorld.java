@@ -1,19 +1,21 @@
 
-package advancejavalab.Lab1;
+package np.edu.scst.advancejavalab.Lab1;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.Color;
 
 public class HelloWorld extends JFrame{
     HelloWorld(){
-        JPanel jPannel=new JPanel();
+        JPanel jPanel=new JPanel();
         JLabel jLabel=new JLabel("Hello World");
-        setBackground(jPannel.Black);
+        jPanel.setBackground(Color.Cyne);
         
         
         
         
         
-        add(jPannel);
-        jPannel.add(jLabel);
+        add(jPanel);
+        jPanel.add(jLabel);
         setVisible(true);
         setSize(400,400);
         setTitle("Hello World");

@@ -1,5 +1,5 @@
 
-package advancejavalab.Lab1;
+package np.edu.scst.advancejavalab.Lab1;
 import javax.swing.*;
 
 public class Shapes extends JFrame {
