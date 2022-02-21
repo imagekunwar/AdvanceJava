@@ -8,12 +8,8 @@ public class HelloWorld extends JFrame{
     HelloWorld(){
         JPanel jPanel=new JPanel();
         JLabel jLabel=new JLabel("Hello World");
-        jPanel.setBackground(Color.Cyne);
-        
-        
-        
-        
-        
+        jPanel.setBackground(Color.cyan);
+          
         add(jPanel);
         jPanel.add(jLabel);
         setVisible(true);
