@@ -12,6 +12,14 @@
         <servlet-name>PostDemo</servlet-name>
         <servlet-class>np.edu.scst.servlet.PostDemo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SessionDemo</servlet-name>
+        <servlet-class>np.edu.scst.servlet.SessionDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetSession</servlet-name>
+        <servlet-class>np.edu.scst.servlet.GetSession</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>PostDemo</servlet-name>
         <url-pattern>/postprocessing</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionDemo</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSession</servlet-name>
+        <url-pattern>/getsession</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
