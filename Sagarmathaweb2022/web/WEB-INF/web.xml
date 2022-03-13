@@ -34,7 +34,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SessionDemo</servlet-name>
-        <url-pattern>/session</url-pattern>
+        <url-pattern>/savesession</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>GetSession</servlet-name>
