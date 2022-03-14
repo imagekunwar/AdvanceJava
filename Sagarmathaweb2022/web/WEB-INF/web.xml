@@ -20,6 +20,10 @@
         <servlet-name>GetSession</servlet-name>
         <servlet-class>np.edu.scst.servlet.GetSession</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CookieDemo</servlet-name>
+        <servlet-class>np.edu.scst.servlet.CookieDemo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
@@ -39,6 +43,18 @@
     <servlet-mapping>
         <servlet-name>GetSession</servlet-name>
         <url-pattern>/getsession</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CookieDemo</servlet-name>
+        <url-pattern>/savecookie</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetCookie</servlet-name>
+        <servlet-class>np.edu.scst.servlet.GetCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookie</servlet-name>
+        <url-pattern>/getcookie</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
